@@ -1,0 +1,17 @@
+{
+  "name": "www",
+  "authors": [
+    "ovyhopen <oleh.vyhopen@ukrinsoft.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
