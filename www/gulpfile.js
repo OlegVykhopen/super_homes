@@ -5,10 +5,18 @@ var cssClean = require("gulp-clean-css");
 var imageMin = require("gulp-imagemin");
 var order = require("gulp-order");
 var htmlBuild = require("gulp-htmlbuild");
+var browserSync = require('browser-sync').create();
 
 /* Dev tasks  */
 
-gulp.task('default', [], function(){
+gulp.task('default', ['devHtml'], function(){
+    browserSync.init({
+        server: "./src"
+    });
+    gulp.watch(['src/index.html', 'src/*/*.html']).on('change', browserSync.reload);
+});
+
+gulp.task('devHtml', function(){
 
 });
 
