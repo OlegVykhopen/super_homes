@@ -1,21 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
 <head>
     <meta charset="UTF-8">
     <title>Start page</title>
 
     <!-- htmlbuild:css -->
         <!-- inject:css -->
-        <!-- endbuild -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- endinject  -->
     <!-- endbuild -->
 
 </head>
 <body>
-    <h1>I love Tania so</h1>
+
+    <div ui-view>
+
+    </div>
+
     <!-- htmlbuild:js -->
         <!-- inject:js -->
-        <!-- endbuild -->
+        <script src="js/framework/angular.min.js"></script>
+        <script src="js/framework/angular-ui-router.min.js"></script>
+        <script src="app/main/module.js"></script>
+        <script src="app/registration/module.js"></script>
+        <script src="app/main/config.js"></script>
+        <script src="app/main/controller.js"></script>
+        <script src="app/main/directives/footerDirective.js"></script>
+        <script src="app/main/directives/headerDirective.js"></script>
+        <script src="app/registration/config.js"></script>
+        <script src="app/registration/controller.js"></script>
+        <script src="app/registration/directives/loginFormDirective.js"></script>
+        <script src="app/registration/directives/regFormDirective.js"></script>
+        <script src="app/registration/factory/fileReaderFactory.js"></script>
+        <script src="js/app.js"></script>
+        <!-- endinject  -->
     <!-- endbuild -->
-
 </body>
 </html>

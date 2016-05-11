@@ -1,7 +1,6 @@
 {
   "name": "www",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
@@ -10,13 +9,17 @@
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.6",
     "gulp-concat": "^2.6.0",
+    "gulp-htmlbuild": "^0.4.1",
     "gulp-imagemin": "^2.4.0",
     "gulp-inject": "^4.0.0",
+    "gulp-order": "^1.1.1",
+    "gulp-sass": "^2.3.1",
     "gulp-uglify": "^1.5.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": ""
 }

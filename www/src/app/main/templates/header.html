@@ -1,0 +1,34 @@
+<div class="container">
+    <header>
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-1">
+                <ul class="lst-unstyled list horizontal">
+                    <li>
+                        <a href="#" ui-sref="/" class="link blue"><i class="plus"></i>Ausflugsziel eintragen</a>
+                    </li>
+                    <li>
+                        <a href="#" ui-sref="/" class="link blue">Kindergeburtstag</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-5 col-lg-offset-2">
+                <ul class="list-unstyled list horizontal">
+                    <li>
+                        <a href="#" ui-sref="/" class="link green"><i class="plus"></i>Erfahrungsberichte</a>
+                    </li>
+                    <li>
+                        <a href="#" ui-sref="/" class="link green">Mitglieder</a>
+                    </li>
+                    <li>
+                        <a href="#" ui-sref="register" class="link green">Neu anmeld</a>
+                    <li>
+                        <a class="link green" ng-click="vm.showLogin()">Login</a>
+                        <div id="login" ng-show="vm.isLoginShown">
+                            <login-form small="true"></login-form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+</div>

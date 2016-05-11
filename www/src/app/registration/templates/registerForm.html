@@ -1,0 +1,74 @@
+<form class="register" ng-submit="vm.register()">
+    <div class="row">
+        <div class="col-lg-3 col-xs-12">
+            <input id="avatarFile" type="file" ng-file-select="onFileSelect($files)" />
+            <div class="file-holder" ng-click="vm.triggerFile()">
+                <img ng-src="{{vm.avatarSrc || vm.defAvatarScr}}" />
+            </div>
+        </div>
+        <div class="col-lg-9 col-xs-12">
+            <div class="wrap">
+                <p>
+                    Bitte fülle alle Felder aus und klicke anschließend auf „Anmelden“ um Dich auf mitkid.de kostenfrei zu registrieren. Optional kannst Du auch ein Profilbild hochladen.
+                </p>
+                <div class="row">
+                    <div class="col-xs-12 col-lg-6 text-right">
+                        <label for="name">Benutzername:</label>
+                    </div>
+                    <div class="col-xs-12 col-lg-6 text-left">
+                        <div class="shape-cont">
+                            <div class="shape"></div>
+                            <input type="text" name="name" id="name" ng-model="vm.userName" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-6 text-right">
+                        <label for="mail">E-Mail-Adresse:</label>
+                    </div>
+                    <div class="col-xs-12 col-lg-6 text-left">
+                        <div class="shape-cont">
+                            <div class="shape"></div>
+                        <input type="text" name="mail" id="mail" ng-model="vm.userMail" />
+                            </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-6 text-right">
+                        <label for="pass">Passwort:</label>
+                    </div>
+                    <div class="col-xs-12 col-lg-6 text-left">
+                        <div class="shape-cont">
+                            <div class="shape"></div>
+                        <input type="text" id="pass" name="pass" ng-model="vm.userPass" />
+                            </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-6 text-right">
+                        <label for="conf-pass">Passwort wiederholen:</label>
+                    </div>
+                    <div class="col-xs-12 col-lg-6 text-left">
+                        <div class="shape-cont">
+                            <div class="shape"></div>
+                        <input type="text" id="conf-pass" name="conf-pass" ng-model="vm.confPass" />
+                            </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-6 text-right">
+                        <label for="security">Sicherheitscode eingeben:</label>
+                    </div>
+                    <div class="col-xs-12 col-lg-6 text-left">
+                        <div class="shape-cont">
+                            <div class="shape"></div>
+                        <input type="text" id="security" name="security" ng-model="vm.userSec" />
+                            </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-6 text-right">&nbsp;</div>
+                    <div class="col-xs-12 col-lg-6 text-left">
+                        <input type="checkbox" name="license" ng-model="vm.userAgree" />
+                        <span><a>Nutzungsbedingungen </a>gelesen und akzeptiert</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 text-center">
+                <input type="submit" value="Anmelden" />
+            </div>
+        </div>
+    </div>
+</form>
+
+

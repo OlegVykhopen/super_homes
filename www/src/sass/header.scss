@@ -1,0 +1,32 @@
+header{
+  &.with_logo{
+    padding: 0 20px 0;
+    img{
+      max-width: 150px;
+      cursor: pointer;
+    }
+  }
+  padding: 10px 20px 0;
+  margin-top: 10px;
+  li{
+    padding: 0 5px;
+    position: relative;
+    a{
+      font-weight: 700;
+      &:before{
+        @extend .inl-bl;
+        font-size: 12px;
+        vertical-align: baseline;
+        margin-right: 5px;
+        content: "|";
+      }
+    }
+  }
+}
+
+#login{
+  @extend .inl-bl;
+  position: absolute;
+  top: 130%;
+  right: -50px;
+}

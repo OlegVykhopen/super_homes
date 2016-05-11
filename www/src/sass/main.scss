@@ -1,0 +1,81 @@
+main{
+  background: #fff url(../img/clouds.png) no-repeat center 0;
+  .logo{
+    margin: 60px 0;
+  }
+  form{
+    margin: 25px 0;
+    .search-box{
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      .shape-cont{
+        &.large{
+          height: 50px;
+          width: 100%;
+          max-width: 320px;
+          div.shape{
+            left: -12px;
+            width: 100%;
+            z-index: 0;
+            height: 100%;
+            top: 0;
+          }
+          label.shape{
+            top: -3px;
+            left: -95px;
+            width: 75px;
+            height: 57px;
+            line-height: 57px;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 10px;
+            color: #fff;
+            transform: perspective(10px) rotateX(1deg) rotateY(2deg) rotate(-7deg);
+            &:after{
+              content: "";
+              position: absolute;
+              right: -55px;
+              top: 30px;
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 6px 0 6px 60px;
+              transform: rotate(7deg);
+              z-index: 0;
+              border-color: transparent transparent transparent #00a6eb;
+            }
+            span{
+              display: inline-block;
+              transform: rotate(-5deg);
+            }
+          }
+          a.shape{
+            top: 3px;
+            right: -90px;
+            width: 75px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 27px;
+            font-weight: bold;
+            border-radius: 10px;
+            color: #fff;
+            transform: perspective(10px) rotateX(-1deg) rotateY(-2deg) rotate(9deg);
+            span{
+              position: relative;
+              left: 3px;
+            }
+          }
+          input{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            font-size: 16px;
+            max-width: 270px;
+          }
+        }
+      }
+    }
+  }
+}

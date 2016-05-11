@@ -1,0 +1,72 @@
+i{
+  .plus{
+    background: #fff url(../img/ico_plus_small.png) no-repeat 6px 7px;
+  }
+}
+
+.divider{
+  height: 1px;
+  width: 100%;
+  background-color: #bbe2e8;
+}
+.link{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+
+  &:hover{
+    cursor: pointer;
+  }
+  &.blue{
+    color: #00a6eb;
+  }
+  &.green{
+    color: #b4cc37;
+  }
+}
+.list{
+  &.horizontal{
+    li{
+      @extend .inl-bl;
+    }
+  }
+}
+.shape-cont{
+  position: relative;
+  margin: 0 auto;
+  .shape{
+    @extend .inl-bl;
+    transform: perspective(30px) rotateX(-1deg) rotateY(-1deg);
+    &.blue{
+      background: #fff;
+      border: 3px solid #a9e1f9;
+    }
+    &.sky{
+      background: #00abed;
+    }
+    &.green{
+      background: #97c000;
+    }
+  }
+  & > *{
+    position: absolute;
+    z-index: 1;
+  }
+}
+
+/* helper classes */
+.inl-bl{
+  display: inline-block;
+  vertical-align: top;
+}
+.no-brd{
+  &, &:focus, &:active{
+    border: none;
+    outline: none;
+  }
+}
+.no-pad{
+  padding: 0 !important;
+}
+.no-marg{
+  margin: 0 !important;
+}

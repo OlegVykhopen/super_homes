@@ -1,0 +1,32 @@
+<div ng-controller="mainController as vm">
+    <app-header></app-header>
+    <main>
+        <div class="divider"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="text-center" >
+                        <img class="logo" ng-src="img/logo.png" />
+                    </div>
+                    <h2>Ausflugsziele für Kinder / Ausflug mit Kindern gesucht?</h2>
+                    <p class="text-center small">Hier findest Du für Kinder geeignete Ausflugsziele in Deiner Umgebung, mit persönlichen Erfahrungsberichten von Eltern für Eltern.</p>
+                    <form class="text-center main">
+                        <div class="search-box">
+                            <div class="shape-cont large">
+                                <label for="search" class="shape sky">
+                                    <span>ORT?</span>
+                                </label>
+                                <div class="shape blue"></div>
+                                <a href="#" ui-sref="/" class="shape green">
+                                    <span>LOS!</span>
+                                </a>
+                                <input class="no-brd" id="search" type="text" ng-model="search" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <app-footer></app-footer>
+</div>

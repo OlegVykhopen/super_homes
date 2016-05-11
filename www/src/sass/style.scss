@@ -1,0 +1,30 @@
+@import "class";
+@import "header";
+@import "main";
+@import "footer";
+@import "form";
+
+
+body, html{
+  min-height: 100%;
+}
+h1{
+  font-size: 24px;
+}
+h2{
+  font-size: 18px;
+}
+h2,h1{
+  font-weight: normal;
+  color: #00a6eb;
+  text-align: center;
+  font-family: Verdana, Helvetica, sans-serif;
+}
+p{
+  color: #9f9f9f;
+  font-size: 11px;
+  line-height: 16px;
+  .small{
+    max-width: 350px;
+  }
+}
